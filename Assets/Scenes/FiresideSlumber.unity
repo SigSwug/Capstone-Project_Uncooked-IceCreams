@@ -2327,10 +2327,11 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Directly in front of the bed is a long cushioned seat with books and a pillow.
-    On the nightstand to your right, you'll find a menu to turn the music on and off,
-    allowing you to tailor the experience to your preference. Above you, a night light
-    casts a slow-moving, soft glow, designed to help you drift into sleep.
+  m_text: A menu can be activated, letting you turn the music on and off and adjust
+    the spinner and night light. Use your VR controller's trigger to control these
+    features, tailoring the experience to your preference. Above, a night light casts
+    a soft, slow-moving glow, while a gently rotating spinner on the ceiling adds
+    a calming rhythm to the room.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2565,7 +2566,7 @@ MonoBehaviour:
   - 6
   - 14
   - 21
-  - 23
+  - 25
   - 22
 --- !u!4 &535244348
 Transform:
