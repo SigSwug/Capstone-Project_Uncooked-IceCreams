@@ -18,7 +18,7 @@ public class VRMenuController : MonoBehaviour
             ActivateMenu();
         }
 
-        if (Input.GetMouseButtonDown(0))  // 0 is the left mouse button
+        if (Input.GetKeyDown(KeyCode.M))  // M key on the keyboard
         {
             ActivateMenu();
         }
