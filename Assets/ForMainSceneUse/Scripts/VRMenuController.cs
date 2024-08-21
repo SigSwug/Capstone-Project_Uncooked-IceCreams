@@ -12,8 +12,9 @@ public class VRMenuController : MonoBehaviour
 
     void Update()
     {
-        // Always activate the menu on input
-        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger))  // For Oculus
+        // Activate the menu on input from either the primary or secondary trigger
+        if (OVRInput.GetDown(OVRInput.Button.PrimaryIndexTrigger) || 
+            OVRInput.GetDown(OVRInput.Button.SecondaryIndexTrigger))  // For Oculus
         {
             ActivateMenu();
         }
