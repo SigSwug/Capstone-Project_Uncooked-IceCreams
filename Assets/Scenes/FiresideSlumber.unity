@@ -723,8 +723,8 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: TOGGLE OPTIONS
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 65ad1d71f83a51f41bb977dd38e4e6a1, type: 2}
-  m_sharedMaterial: {fileID: -7237848057454271640, guid: 65ad1d71f83a51f41bb977dd38e4e6a1,
+  m_fontAsset: {fileID: 11400000, guid: de1b21f182f76514a849f3115ec556ce, type: 2}
+  m_sharedMaterial: {fileID: -1377148801345425635, guid: de1b21f182f76514a849f3115ec556ce,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -750,13 +750,13 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 11.3
-  m_fontSizeBase: 11.3
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
-  m_fontStyle: 2
+  m_fontStyle: 0
   m_textAlignment: 258
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -938,7 +938,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &148938921
 MonoBehaviour:
@@ -960,7 +960,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 143f74441fc7f41489a2cf17410755d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bc6d7fad1f70964dab1eea53a55e22d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1575,7 +1575,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &219914246
 MonoBehaviour:
@@ -1597,7 +1597,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 143f74441fc7f41489a2cf17410755d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bc6d7fad1f70964dab1eea53a55e22d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2524,7 +2524,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374366817
 MonoBehaviour:
@@ -2546,7 +2546,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 143f74441fc7f41489a2cf17410755d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bc6d7fad1f70964dab1eea53a55e22d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5171,16 +5171,16 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Room Lights
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: be65cdeb8cecf1149baaee65cf6c948e, type: 2}
-  m_sharedMaterial: {fileID: -8440206797272782726, guid: be65cdeb8cecf1149baaee65cf6c948e,
+  m_fontAsset: {fileID: 11400000, guid: 4162e46925f58344abb8f02f552dee52, type: 2}
+  m_sharedMaterial: {fileID: -8038207389091987918, guid: 4162e46925f58344abb8f02f552dee52,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283090161
-  m_fontColor: {r: 0.94509804, g: 0.76862746, b: 0.2901961, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10980,18 +10980,18 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Fire Place
+  m_text: Fireplace
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: be65cdeb8cecf1149baaee65cf6c948e, type: 2}
-  m_sharedMaterial: {fileID: -8440206797272782726, guid: be65cdeb8cecf1149baaee65cf6c948e,
+  m_fontAsset: {fileID: 11400000, guid: 4162e46925f58344abb8f02f552dee52, type: 2}
+  m_sharedMaterial: {fileID: -8038207389091987918, guid: 4162e46925f58344abb8f02f552dee52,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283090161
-  m_fontColor: {r: 0.94509804, g: 0.76862746, b: 0.2901961, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11050,10 +11050,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 826336012}
-    characterCount: 10
+    characterCount: 9
     spriteCount: 0
-    spaceCount: 1
-    wordCount: 2
+    spaceCount: 0
+    wordCount: 1
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -11116,8 +11116,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: 13, y: -9}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &850826960
 MonoBehaviour:
@@ -11139,7 +11139,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a5dbc36ed00dc641bd94ca7a7f27ac3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0134fa0d46a51274e83941e2464139ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11268,7 +11268,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &901637242
 MonoBehaviour:
@@ -11290,7 +11290,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 143f74441fc7f41489a2cf17410755d0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8bc6d7fad1f70964dab1eea53a55e22d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -11425,16 +11425,16 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Music
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: be65cdeb8cecf1149baaee65cf6c948e, type: 2}
-  m_sharedMaterial: {fileID: -8440206797272782726, guid: be65cdeb8cecf1149baaee65cf6c948e,
+  m_fontAsset: {fileID: 11400000, guid: 4162e46925f58344abb8f02f552dee52, type: 2}
+  m_sharedMaterial: {fileID: -8038207389091987918, guid: 4162e46925f58344abb8f02f552dee52,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283090161
-  m_fontColor: {r: 0.94509804, g: 0.76862746, b: 0.2901961, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11452,8 +11452,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 13
-  m_fontSizeBase: 13
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -11686,8 +11686,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: 13, y: -9}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1012446870
 MonoBehaviour:
@@ -11709,7 +11709,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a5dbc36ed00dc641bd94ca7a7f27ac3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0134fa0d46a51274e83941e2464139ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12540,16 +12540,16 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_text: Spinner
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: be65cdeb8cecf1149baaee65cf6c948e, type: 2}
-  m_sharedMaterial: {fileID: -8440206797272782726, guid: be65cdeb8cecf1149baaee65cf6c948e,
+  m_fontAsset: {fileID: 11400000, guid: 4162e46925f58344abb8f02f552dee52, type: 2}
+  m_sharedMaterial: {fileID: -8038207389091987918, guid: 4162e46925f58344abb8f02f552dee52,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4283024368
-  m_fontColor: {r: 0.9433962, g: 0.7682499, b: 0.28924885, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -15383,8 +15383,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: 13, y: -9}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1621154216
 MonoBehaviour:
@@ -15406,7 +15406,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a5dbc36ed00dc641bd94ca7a7f27ac3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0134fa0d46a51274e83941e2464139ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15634,8 +15634,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 10, y: -10}
-  m_SizeDelta: {x: 20, y: 20}
+  m_AnchoredPosition: {x: 13, y: -9}
+  m_SizeDelta: {x: 15, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1667901462
 MonoBehaviour:
@@ -15657,7 +15657,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 1a5dbc36ed00dc641bd94ca7a7f27ac3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0134fa0d46a51274e83941e2464139ce, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
