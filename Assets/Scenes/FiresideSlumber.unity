@@ -11418,6 +11418,11 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1588454443078320124, guid: bee4ec49984f4f945a42552dd7db04fd,
+        type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: -7567966254817855626, guid: bee4ec49984f4f945a42552dd7db04fd,
         type: 3}
       propertyPath: m_StaticEditorFlags
@@ -11477,11 +11482,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1588454443078320124, guid: bee4ec49984f4f945a42552dd7db04fd,
-        type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 4294967295
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bee4ec49984f4f945a42552dd7db04fd, type: 3}
