@@ -5577,13 +5577,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601346652}
-  m_LocalRotation: {x: 0.48452485, y: -0.48452625, z: 0.515009, w: 0.5150104}
-  m_LocalPosition: {x: 7.465, y: -17.564, z: -6.891}
+  m_LocalRotation: {x: 0.6914221, y: -0.69142216, z: 0.14810552, w: 0.14810702}
+  m_LocalPosition: {x: 7.465, y: -17.662, z: -6.281}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1077414366}
   m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 86.506004, y: -0.003, z: 89.997}
+  m_LocalEulerAnglesHint: {x: 155.819, y: -0.000015258789, z: 89.99999}
 --- !u!108 &601346654
 Light:
   m_ObjectHideFlags: 0
@@ -5594,10 +5594,10 @@ Light:
   m_Enabled: 1
   serializedVersion: 9
   m_Type: 0
-  m_Color: {r: 0.3070488, g: 0.50129056, b: 0.5660378, a: 1}
-  m_Intensity: 1.91
+  m_Color: {r: 0.034754362, g: 0.51585823, b: 0.6698113, a: 1}
+  m_Intensity: 2.8
   m_Range: 2.41
-  m_SpotAngle: 85
+  m_SpotAngle: 145.19456
   m_InnerSpotAngle: 1
   m_CookieSize: 10
   m_Shadows:
@@ -18809,11 +18809,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: -5622378977428776937, guid: 4055c75b7f0aab843a728dc55b90ac30,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2e55738391992bc48aa32f3529c97d0e, type: 2}
     - target: {fileID: -4216859302048453862, guid: 4055c75b7f0aab843a728dc55b90ac30,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18869,6 +18864,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -5622378977428776937, guid: 4055c75b7f0aab843a728dc55b90ac30,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2e55738391992bc48aa32f3529c97d0e, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4055c75b7f0aab843a728dc55b90ac30, type: 3}
 --- !u!1 &1964325543
