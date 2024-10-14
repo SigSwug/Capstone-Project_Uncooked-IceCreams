@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/FiresideSlumber_Menu.unity
+    guid: a245e72fcb7d7e043932d803004cc5c6
+  - enabled: 1
     path: Assets/Scenes/FiresideSlumber.unity
     guid: 3692d5f63ea6e03439df381e680dceae
   m_configObjects: {}

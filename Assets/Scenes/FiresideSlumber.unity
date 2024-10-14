@@ -4569,6 +4569,13 @@ MonoBehaviour:
   - 16
   - 7
   - 2
+  promptDelays:
+  - 2
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
 --- !u!4 &535244348
 Transform:
   m_ObjectHideFlags: 0
