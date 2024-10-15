@@ -1,22 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Liminal.SDK.Core;
+using Liminal.Core.Fader;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager Instance { get; private set; }
-
-    [Header("Scene Names")]
-    public string menuScene = "Menu";
-    public string gameScene = "Game";
-
     [Header("Fade Settings")]
     public Material fadeMaterial; // Material to use for fading
     public float fadeDuration = 1.0f;
 
     [Header("Game Settings")]
-    public float gameDuration = 5.0f; // Default game duration in minutes
+    public float gameDuration = 10.0f; // Default game duration in minutes
 
     [SerializeField, Tooltip("Time remaining in seconds, visible in the Inspector.")]
     private float timeRemaining; // Now serialized so we can view it in the Inspector
@@ -24,67 +19,18 @@ public class GameManager : MonoBehaviour
     private bool isFading = false;
     private bool gameStarted = false;
 
-    public GameObject menuCanvas; // Reference to the Menu Canvas
+    public GameObject menuScene; // Reference to the Menu Scene GameObject
+    public GameObject gameScene; // Reference to the Game Scene GameObject
 
     [Header("Audio")]
     public AudioSource audioSource; // Reference to the AudioSource
     public AudioClip buttonClickSound; // Clip to play when buttons are clicked
 
-    private void Awake()
-    {
-        // Ensure singleton instance
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject); // Persist between scenes
-        }
-        else
-        {
-            Destroy(gameObject); // Ensure only one instance
-        }
-    }
-
     private void Start()
     {
-        // Ensure MenuCanvas is active in the Menu scene
-        HandleCanvasActivation();
-    }
-
-    private void OnEnable()
-    {
-        // Listen for scene changes
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    private void OnDisable()
-    {
-        // Unsubscribe from scene change event
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // Handle canvas activation when a new scene is loaded
-        HandleCanvasActivation();
-    }
-
-    private void HandleCanvasActivation()
-    {
-        // Check if we are in the Menu scene, activate or deactivate the menu canvas accordingly
-        if (SceneManager.GetActiveScene().name == menuScene)
-        {
-            if (menuCanvas != null)
-            {
-                menuCanvas.SetActive(true); // Activate the MenuCanvas in the Menu scene
-            }
-        }
-        else
-        {
-            if (menuCanvas != null)
-            {
-                menuCanvas.SetActive(false); // Deactivate the MenuCanvas in other scenes
-            }
-        }
+        // Ensure menuScene is active at the beginning
+        menuScene.SetActive(true);
+        gameScene.SetActive(false); // Deactivate gameScene at the start
     }
 
     private void Update()
@@ -95,7 +41,7 @@ public class GameManager : MonoBehaviour
 
             if (timeRemaining <= 0)
             {
-                StartCoroutine(FadeAndLoadScene(menuScene));
+                StartCoroutine(FadeAndReturnToMenu());
                 gameStarted = false;
             }
         }
@@ -106,16 +52,26 @@ public class GameManager : MonoBehaviour
     {
         gameDuration = durationInMinutes;
         timeRemaining = gameDuration * 60; // Convert minutes to seconds
-        gameStarted = true; // Set game as started
-        StartCoroutine(FadeAndLoadScene(gameScene));
+        StartCoroutine(FadeAndStartGame());
     }
 
-    // This coroutine fades out, loads the next scene, and fades back in
-    private IEnumerator FadeAndLoadScene(string sceneName)
+    // Coroutine that waits for fade-out, switches to the game, and then fades in
+    private IEnumerator FadeAndStartGame()
     {
-        yield return StartCoroutine(FadeOut()); // Fade out before loading the scene
-        SceneManager.LoadScene(sceneName);      // Load the scene
-        yield return StartCoroutine(FadeIn());  // Fade in after loading
+        yield return StartCoroutine(FadeOut()); // Wait for fade-out to complete
+        menuScene.SetActive(false); // Deactivate the menuScene after fade-out
+        gameScene.SetActive(true);  // Activate the gameScene
+        gameStarted = true;         // Start the game
+        yield return StartCoroutine(FadeIn());  // Wait for fade-in to complete
+    }
+
+    // Coroutine that waits for fade-out, returns to the menu, and then fades in
+    private IEnumerator FadeAndReturnToMenu()
+    {
+        yield return StartCoroutine(FadeOut()); // Wait for fade-out to complete
+        gameScene.SetActive(false); // Deactivate the gameScene after fade-out
+        menuScene.SetActive(true);  // Activate the menuScene
+        yield return StartCoroutine(FadeIn());  // Wait for fade-in to complete
     }
 
     // Fade out function
@@ -169,7 +125,11 @@ public class GameManager : MonoBehaviour
     // Call this function to quit the game and return to the menu
     public void EndGameAndReturnToMenu()
     {
-        StartCoroutine(FadeAndLoadScene(menuScene));
+        var fader = ScreenFader.Instance;
+        fader.FadeToBlack();
+        fader.WaitUntilFadeComplete();
+        ExperienceApp.End();
+        StartCoroutine(FadeAndReturnToMenu());
     }
 
     // Helper function to play button click sound
@@ -181,21 +141,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnThreeMinuteButtonClick()
-    {
-        PlayButtonClickSound();
-        GameManager.Instance.SetGameDurationAndStart(3);
-    }
-
-    public void OnFiveMinuteButtonClick()
-    {
-        PlayButtonClickSound();
-        GameManager.Instance.SetGameDurationAndStart(5);
-    }
-
+    // Button click handlers for 10 minutes, 20 minutes, and 30 minutes
     public void OnTenMinuteButtonClick()
     {
         PlayButtonClickSound();
-        GameManager.Instance.SetGameDurationAndStart(10);
+        SetGameDurationAndStart(10);
+    }
+
+    public void OnTwentyMinuteButtonClick()
+    {
+        PlayButtonClickSound();
+        SetGameDurationAndStart(20);
+    }
+
+    public void OnThirtyMinuteButtonClick()
+    {
+        PlayButtonClickSound();
+        SetGameDurationAndStart(30);
     }
 }
