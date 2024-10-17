@@ -21,6 +21,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject menuScene; // Reference to the Menu Scene GameObject
     public GameObject gameScene; // Reference to the Game Scene GameObject
+    public GameObject menuToggleController; // Reference to the MenuToggleController GameObject
+    public GameObject vrMenuControllerObject; // GameObject that contains VRMenuController script
+
+    private VRMenuController vrMenuController; // Reference to the VRMenuController script
 
     [Header("Audio")]
     public AudioSource audioSource; // Reference to the AudioSource
@@ -31,6 +35,19 @@ public class GameManager : MonoBehaviour
         // Ensure menuScene is active at the beginning
         menuScene.SetActive(true);
         gameScene.SetActive(false); // Deactivate gameScene at the start
+
+        // Ensure MenuToggleController is inactive initially
+        if (menuToggleController != null)
+        {
+            menuToggleController.SetActive(false);
+        }
+
+        // Get the VRMenuController component if the object is assigned
+        if (vrMenuControllerObject != null)
+        {
+            vrMenuController = vrMenuControllerObject.GetComponent<VRMenuController>();
+            vrMenuController.enabled = false; // Disable VRMenuController at the start
+        }
     }
 
     private void Update()
@@ -63,6 +80,18 @@ public class GameManager : MonoBehaviour
         gameScene.SetActive(true);  // Activate the gameScene
         gameStarted = true;         // Start the game
         yield return StartCoroutine(FadeIn());  // Wait for fade-in to complete
+
+        // Wait 0.5 second before activating the MenuToggleController and VRMenuController
+        yield return new WaitForSeconds(0.5f);
+        if (menuToggleController != null)
+        {
+            menuToggleController.SetActive(true);
+        }
+
+        if (vrMenuController != null)
+        {
+            vrMenuController.enabled = true; // Enable the VRMenuController script
+        }
     }
 
     // Coroutine that waits for fade-out, returns to the menu, and then fades in
