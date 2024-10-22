@@ -3,7 +3,17 @@ guid: 482653459bb210f4490fe5d99dbb0c4e
 ModelImporter:
   serializedVersion: 25
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Globe
+    second: {fileID: 2100000, guid: df67acbf9454ae2478c4d3b8077e98da, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_Rings
+    second: {fileID: 2100000, guid: 5bae928bcb6bfad48b39ec4316f39329, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -43,7 +53,7 @@ ModelImporter:
     importCameras: 1
     importLights: 1
     swapUVChannels: 0
-    generateSecondaryUV: 0
+    generateSecondaryUV: 1
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
