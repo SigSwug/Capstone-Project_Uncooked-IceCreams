@@ -8185,7 +8185,7 @@ Light:
   serializedVersion: 9
   m_Type: 2
   m_Color: {r: 0.14117646, g: 0.71906906, b: 0.8, a: 1}
-  m_Intensity: 1.55
+  m_Intensity: 2.21
   m_Range: 2.8518333
   m_SpotAngle: 43.999035
   m_InnerSpotAngle: 1
@@ -10114,17 +10114,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 4c9a1d3d0d7cd014f803a33d05655366,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.3
+      value: -24.82
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4c9a1d3d0d7cd014f803a33d05655366,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.96
+      value: 11.48
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4c9a1d3d0d7cd014f803a33d05655366,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 31.04
+      value: 26.92
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 4c9a1d3d0d7cd014f803a33d05655366,
         type: 3}
@@ -18644,6 +18644,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BubblesFast
       objectReference: {fileID: 0}
+    - target: {fileID: 4084004732179951834, guid: 71d9515a871404f49861d2ccd42f0d05,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4084004732179951831, guid: 71d9515a871404f49861d2ccd42f0d05,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18844,12 +18849,17 @@ PrefabInstance:
     - target: {fileID: 4580344231691179373, guid: b5d57083cfbcfd749b6ea644a78c605d,
         type: 3}
       propertyPath: InitialModule.gravityModifier.scalar
-      value: -0.04
+      value: -0.02
       objectReference: {fileID: 0}
     - target: {fileID: 4580344231691179373, guid: b5d57083cfbcfd749b6ea644a78c605d,
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
-      value: 3.15
+      value: 4.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4580344231691179373, guid: b5d57083cfbcfd749b6ea644a78c605d,
+        type: 3}
+      propertyPath: InitialModule.maxNumParticles
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b5d57083cfbcfd749b6ea644a78c605d, type: 3}
