@@ -12733,6 +12733,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 664185632}
   m_PrefabAsset: {fileID: 0}
+--- !u!23 &1520356150 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -1504981713932161579, guid: 2cbb55cff85576442859533279cc3fdc,
+    type: 3}
+  m_PrefabInstance: {fileID: 69464048}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1523877922 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4040724619408024, guid: fe883443e949049e19ab6cba6f558940,
@@ -14794,6 +14800,7 @@ GameObject:
   - component: {fileID: 1703352561}
   - component: {fileID: 1703352562}
   - component: {fileID: 1703352563}
+  - component: {fileID: 1703352564}
   m_Layer: 0
   m_Name: MenuController
   m_TagString: Untagged
@@ -14829,7 +14836,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toggleObjectPairs:
-  - toggle: {fileID: 0}
+  - toggle: {fileID: 502711502}
     targetObject: {fileID: 0}
   - toggle: {fileID: 1280744682}
     targetObject: {fileID: 8296172667873471344}
@@ -14947,6 +14954,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1703352564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703352559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2b8c5849c070af4f98c24ceeec32421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  materialSlots:
+  - meshRenderer: {fileID: 1520356150}
+    materialSlotIndex: 3
+    materialOn: {fileID: 2100000, guid: 59591d7e783fbf7468148e1dee852d82, type: 2}
+    materialOff: {fileID: 2100000, guid: 4442a7d1c71bb034cab7572f2b094f39, type: 2}
+  toggle: {fileID: 502711502}
 --- !u!1001 &1703511188
 PrefabInstance:
   m_ObjectHideFlags: 0
