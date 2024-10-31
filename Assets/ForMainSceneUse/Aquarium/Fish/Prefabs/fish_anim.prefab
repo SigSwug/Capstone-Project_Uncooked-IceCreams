@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: -187713334963009966}
   - component: {fileID: 6318918430232738302}
   - component: {fileID: 7827495857022854939}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: fish_anim
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6811265362126649192}
   - component: {fileID: 1322831386349273044}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: fish_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -192,7 +192,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8193514298552076106}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Spine_01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -223,7 +223,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4553995636076607746}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Spine_05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5858566993366555182}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Spine_03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -285,7 +285,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3698953178687228102}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Tail_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -315,7 +315,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1967586965708894393}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Root_Joint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -346,7 +346,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2031464509654621376}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Rear_Body_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -377,7 +377,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3132101610192693198}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Main_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -408,7 +408,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4160129031573805617}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Body_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -439,7 +439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8473802746543023208}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Spine_02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -470,7 +470,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1276872752990502996}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Scale_Group
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -502,7 +502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797316608952462606}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Spine_06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -532,7 +532,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5963763498213174569}
-  m_Layer: 9
+  m_Layer: 11
   m_Name: Fish_03_Spine_04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
