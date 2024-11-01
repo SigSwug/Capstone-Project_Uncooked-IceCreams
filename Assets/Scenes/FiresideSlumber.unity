@@ -3753,10 +3753,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Welcome to ''Fireside Slumber,'' your sanctuary for rest and relaxation.
-
-
-'
+  m_text: "Welcome to \u2018Fireside Slumber,\u2019 your sanctuary for rest and relaxation."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 166b7fa291a6a8c44a57b96ee6846fd6, type: 2}
   m_sharedMaterial: {fileID: 5274166180175309181, guid: 166b7fa291a6a8c44a57b96ee6846fd6,
@@ -4708,8 +4705,9 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Let the rain, thunder, and fire sounds guide you into deep relaxation and
-    peaceful sleep.
+  m_text: "You can use the VR controller's \u2018triggers\u2019 to access a menu,
+    where you can toggle on and off various elements of the environment, to customize
+    your experience, or if any of them are not to your liking."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 166b7fa291a6a8c44a57b96ee6846fd6, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5529,9 +5527,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Use the VR controller's trigger to access a menu where you can turn the
-    music on or off, and adjust the spinner and night light. The soft glow above and
-    the slowly rotating spinner on the ceiling enhance the relaxing vibe.
+  m_text: As you lay back, you will see a slowly rotating globe and a nightlight on
+    the ceiling for you to watch, as you relax and drift off to sleep.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 166b7fa291a6a8c44a57b96ee6846fd6, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5653,7 +5650,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 0.25
+  m_Volume: 0.7
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -5755,19 +5752,21 @@ MonoBehaviour:
   - {fileID: 1524097460}
   - {fileID: 524636036}
   - {fileID: 471607542}
+  - {fileID: 1995278661}
   audioClips:
-  - {fileID: 8300000, guid: 646a3ffff0175f14aa28ef15cd216fa0, type: 3}
-  - {fileID: 8300000, guid: 02b53733ca542c5439e3986ed3286cf1, type: 3}
-  - {fileID: 8300000, guid: 96fac0966d378d24198a4a5a3015b517, type: 3}
-  - {fileID: 8300000, guid: 03c06a1551a65ec4ea06cf838699cffd, type: 3}
-  - {fileID: 8300000, guid: f524071fcd7c1724a912bce01523be14, type: 3}
+  - {fileID: 8300000, guid: 808cd072e5ac15046946a427c724e7a4, type: 3}
+  - {fileID: 8300000, guid: cb0867bb06414cf4aa9c3a1fe18a0ad7, type: 3}
+  - {fileID: 8300000, guid: e0c55d52b2fd4e246814a4f61018edd2, type: 3}
+  - {fileID: 8300000, guid: 8984d3b335e23b547bdc4f6f74611316, type: 3}
+  - {fileID: 8300000, guid: e4e36314a2b042b44b8a63de30861170, type: 3}
+  - {fileID: 8300000, guid: 96f0aa77e601480479a3e3f2d666ed26, type: 3}
   audioSource: {fileID: 535244346}
   displayDurations:
-  - 6
-  - 7
-  - 11
-  - 16
-  - 7
+  - 4
+  - 5
+  - 8
+  - 8
+  - 12
   - 2
   promptDelays:
   - 2
@@ -13126,8 +13125,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: A window on your right lets in the sound of gentle rain and distant thunder,
-    creating a soothing atmosphere. Occasional flashes of lightning add to the calm.
+  m_text: 'The windows on your right let in the sound of gentle rain and distant thunder,
+    with an aquarium on your left, to help create a soothing atmosphere. '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 166b7fa291a6a8c44a57b96ee6846fd6, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -17475,7 +17474,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Enjoy your tranquil journey.
+  m_text: We hope you enjoy your time here.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 166b7fa291a6a8c44a57b96ee6846fd6, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
