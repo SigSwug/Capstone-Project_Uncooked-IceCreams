@@ -71,7 +71,7 @@ Material:
     - _Offset: 0
     - _Parallax: 0.02
     - _PulseRate: 0
-    - _PulseStrength: -1.01
+    - _PulseStrength: -1.28
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
