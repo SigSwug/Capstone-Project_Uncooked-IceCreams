@@ -12179,7 +12179,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 633381974353087731, guid: 9784f0ed82768324ba448d4068e95140,
     type: 3}
-  numFish: 2
+  numFish: 1
   allFish: []
   swimLimits: {x: 1.2, y: 0.6, z: 0.4}
   goalPos: {x: 0, y: 0, z: 0}
